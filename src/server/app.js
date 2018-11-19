@@ -12,13 +12,13 @@ const connection = mysql.createConnection({
     database : 'BarBeerDrinkerPlus'
 });
 
-const port = process.env.PORT || 7000;
+const port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.listen(port, function() {
-    console.log('Server running @localhost:7000');
+    console.log('Server running @localhost:3000');
 })
 app.use(cors());
 
